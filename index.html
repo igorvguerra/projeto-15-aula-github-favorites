@@ -1,16 +1,22 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Github Favorites</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+    <script src="./JS/main.js" type="module" defer></script>
 </head>
 <body>
     <div id="app">
         <header>
             <h1>Github Favorites</h1>
             <div class="search">
-                <label for="input-search">usuário do Github</label>
+                <label class="sr-only" for="input-search">usuário do Github</label>
                 <input id="input-search" type="text" placeholder="usuário do Github"/>
                 <button>&plus;</button>
             </div>
@@ -21,7 +27,7 @@
                 <tr>
                     <th>Usuário</th>
                     <th>Repositórios</th>
-                    <th>Seguidores</th>
+                    <th>Followers</th>
                     <th></th>
                 </tr>
             </thead>
@@ -36,7 +42,7 @@
                     </td>
                     <td class="repositories">76</td>
                     <td class="followers">9589</td>
-                    <td><button>&times;</button></td>
+                    <td><button class="remove">&times;</button></td>
                 </tr>
 
                 <tr>
@@ -49,7 +55,7 @@
                     </td>
                     <td class="repositories">48</td>
                     <td class="followers">22503</td>
-                    <td><button>&times;</button></td>
+                    <td><button class="remove">&times;</button></td>
                 </tr>
             </tbody>
            
